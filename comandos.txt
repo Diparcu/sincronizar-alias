@@ -1,0 +1,9 @@
+sudo crontab -e
+
+>>>>>>>> dentro del archivo
+
+# actualizar alias entre servidores a través de git
+*/5 * * * * cd /home/diego/Codigo/sincronizar-alias && git pull --quiet && git add aliases.sh && git commit -m "Sync automático $(hostname)" --quiet || true && git push --quiet
+
+
+
