@@ -200,3 +200,4 @@ function pushear() {
 alias bandcamp='bash /home/jfuser/scripts/bandcampsync/sync_bandcamp.sh'
 
 # Alias personalizados - Fin
+alias probando='echo funciona en atlas'
