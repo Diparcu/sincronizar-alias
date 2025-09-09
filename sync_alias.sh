@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/diego/Codigo/sincronizar-alias || exit 1
+cd /HDD4TB3/home/diego/Codigo/sincronizar-alias || exit 1
 
 # Actualizar desde git
 git pull --quiet
