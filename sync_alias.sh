@@ -1,9 +1,8 @@
 #!/bin/bash
 cd /HDD4TB3/home/diego/Codigo/sincronizar-alias || exit 1
 
-# Actualizar desde git
+# Sincronizar con Git
 git pull --quiet
-
-# Copiar el archivo actualizado a /etc/profile.d/
-sudo cp aliases.sh /etc/profile.d/aliases.sh
-sudo chmod 644 /etc/profile.d/aliases.sh
+git add --all
+git commit -m "Sync automático $(hostname) $(date)" --quiet || true
+git push --quiet
