@@ -201,4 +201,16 @@ function pushear() {
 alias bandcamp='bash /home/jfuser/scripts/bandcampsync/sync_bandcamp.sh'
 
 # Alias personalizados - Fin
-alias probando='echo funciona en atlas'
+alias probando='echo funciona en este servidor'
+
+
+# Alias para ver el peso de directorios
+peso() {
+    if [ $# -eq 0 ]; then
+        # Si no se proporciona argumento, usar el directorio actual
+        du -h --max-depth=1 . | sort -h
+    else
+        # Si se proporciona un argumento, usar esa ruta
+        du -h --max-depth=1 "$1" | sort -h
+    fi
+}
