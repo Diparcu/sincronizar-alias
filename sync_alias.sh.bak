@@ -1,6 +1,5 @@
 #!/bin/bash
-DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd "$DIR" || exit 1
+cd /HDD4TB3/home/diego/Codigo/sincronizar-alias || exit 1
 
 # Sincronizar con Git
 git pull --quiet
