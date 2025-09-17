@@ -214,3 +214,5 @@ peso() {
         du -h --max-depth=1 "$1" | sort -h
     fi
 }
+
+alias pesar='peso'
